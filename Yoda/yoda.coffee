@@ -22,6 +22,6 @@ module.exports = (robot) ->
       )
       .get() (err, res, body) ->
         if err
-          msg.reply err
-        msg.reply body
-
+          msg.reply "Problem with the API there is. Failed it did."
+        else
+          msg.reply body
